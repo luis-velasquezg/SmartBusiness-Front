@@ -9,8 +9,8 @@ export class PromocionService {
 
   constructor(protected http: HttpClient) { }
 
-  getUsers() {
-    return this.http.get('https://randomuser.me/api/?results=25');
+  getPromociones() {
+    return this.http.get('http://localhost:8080/promociones/verpromociones');
   }
-  
+
 }

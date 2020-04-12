@@ -10,19 +10,17 @@ import { PromocionService } from './promocion.service';
 export class AppComponent implements OnInit {
   title = 'smartbusiness-front';
 
-  users: any[] = [];
-  // promociones: any[] = [];
-
+  promociones: any ;
 
   constructor(
     protected promocionService: PromocionService
   ) { }
 
   ngOnInit() {
-    this.promocionService.getUsers()
+    this.promocionService.getPromociones()
     .subscribe(
-      (data) => { // Success
-        this.users = data['results'];
+      (data) => { // Success''
+        this.promociones = data;
       },
       (error) => {
         console.error(error);
