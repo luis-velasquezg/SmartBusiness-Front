@@ -1,31 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { PromocionService } from './promocion.service';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+
+export class AppComponent {
   title = 'smartbusiness-front';
-
-  promociones: any ;
-
-  constructor(
-    protected promocionService: PromocionService
-  ) { }
-
-  ngOnInit() {
-    this.promocionService.getPromociones()
-    .subscribe(
-      (data) => { // Success''
-        this.promociones = data;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }
-
 }
