@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 80.0.3987 (Windows 10.0.0)" package="" timestamp="2020-04-13T02:00:20" id="0" hostname="DESKTOP-NMFGNC6" tests="6" errors="0" failures="4" time="0.579">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36"/>
+  </properties>
+  <testcase name="PromocionService should be created" time="0.431" classname="Chrome_80_0_3987_(Windows_10_0_0).PromocionService">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[PromocionService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PromocionService', 'HttpClient', 'HttpClient' ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1076:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at injectInjectorOnly (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:931:1)
+    at ɵɵinject (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:941:1)
+    at Object.PromocionService_Factory [as factory] (ng:///PromocionService/ɵfac.js:5:44)
+    at R3Injector.hydrate (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16865:42)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16617:1)
+    at NgModuleRef$1.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:36027:1)
+    at TestBedRender3.inject (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:3110:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/promocion.service.spec.ts:14:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AppComponent should have as title 'smartbusiness-front'" time="0.056" classname="Chrome_80_0_3987_(Windows_10_0_0).AppComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[PromocionService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PromocionService', 'HttpClient', 'HttpClient' ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1076:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at injectInjectorOnly (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:931:1)
+    at ɵɵinject (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:941:1)
+    at Object.PromocionService_Factory [as factory] (ng:///PromocionService/ɵfac.js:5:44)
+    at R3Injector.hydrate (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16865:42)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16617:1)
+    at NgModuleRef$1.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:36027:1)
+    at Object.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:33779:1)
+</failure>
+  </testcase>
+  <testcase name="AppComponent should render title" time="0.01" classname="Chrome_80_0_3987_(Windows_10_0_0).AppComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[PromocionService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PromocionService', 'HttpClient', 'HttpClient' ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1076:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at injectInjectorOnly (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:931:1)
+    at ɵɵinject (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:941:1)
+    at Object.PromocionService_Factory [as factory] (ng:///PromocionService/ɵfac.js:5:44)
+    at R3Injector.hydrate (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16865:42)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16617:1)
+    at NgModuleRef$1.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:36027:1)
+    at Object.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:33779:1)
+</failure>
+  </testcase>
+  <testcase name="AppComponent should create the app" time="0.012" classname="Chrome_80_0_3987_(Windows_10_0_0).AppComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[PromocionService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PromocionService', 'HttpClient', 'HttpClient' ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1076:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16629:1)
+    at injectInjectorOnly (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:931:1)
+    at ɵɵinject (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:941:1)
+    at Object.PromocionService_Factory [as factory] (ng:///PromocionService/ɵfac.js:5:44)
+    at R3Injector.hydrate (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16865:42)
+    at R3Injector.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:16617:1)
+    at NgModuleRef$1.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:36027:1)
+    at Object.get (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:33779:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderComponent should create" time="0.03" classname="Chrome_80_0_3987_(Windows_10_0_0).HeaderComponent"/>
+  <testcase name="FooterComponent should create" time="0.04" classname="Chrome_80_0_3987_(Windows_10_0_0).FooterComponent"/>
+  <system-out>
+    <![CDATA[Chrome 80.0.3987 (Windows 10.0.0) ERROR
+  DisconnectedClient disconnected from CONNECTED state (transport error)
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
