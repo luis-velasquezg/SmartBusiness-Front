@@ -23,4 +23,14 @@ describe('PromocionesComponent', () => {
     expect(component).toBeTruthy();
   });
 
+
+// describe('When getPromociones() is called', () => {
+//     it('should handle error', () => {
+//       spyOn(Component.PromocionService, 'getPromociones').and.returnValue(throwError({ error: 'error' }));
+//       component.ngOnInit();
+//       expect(component.error).toBeTruthy();
+//     });
+//   });
+
+
 });

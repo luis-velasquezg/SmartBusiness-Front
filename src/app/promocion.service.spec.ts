@@ -16,14 +16,12 @@ describe('PromocionService', () => {
     expect(service).toBeTruthy();
   });
 
-  describe('When getPromociones() is called', () => {
-
-    it('should handle error', () => {
-      spyOn(Component.PromocionService, 'getPromociones').and.returnValue(throwError({ error: 'error' }));
-      component.getPromociones();
-      expect(component.error).toBeTruthy();
-    });
-
-  });
+  // describe('When getPromociones() is called', () => {
+  //   it('should handle error', () => {
+  //     spyOn(Component.PromocionService, 'getPromociones').and.returnValue(throwError({ error: 'error' }));
+  //     component.getPromociones();
+  //     expect(component.error).toBeTruthy();
+  //   });
+  // });
 
 });
