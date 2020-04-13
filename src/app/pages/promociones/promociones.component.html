@@ -1,0 +1,25 @@
+<!-- <p>promociones works!</p> -->
+
+
+<div class="col-md-4 mx-auto" *ngFor='let promocion of promociones'>
+  <!--    <img [src]="user.picture.medium">-->
+  <!--    <h2>{{ user.name.first | uppercase }}</h2>-->
+  
+    <div class="card" >
+      <div class="card-body" >
+      <h2>{{ promocion.mensaje }}</h2>
+        <button class="btn btn-primary btn-block" type="submit">
+          Aplicar
+        </button>
+      </div>
+    </div>
+  
+  </div>
+  
+      <!-- Promocion
+        this.codigo = codigo;
+        this.mensaje = mensaje;
+        this.fecha = fecha;
+        this.producto = producto;
+        this.porcentajePromocion = porcentajePromocion;
+      -->
