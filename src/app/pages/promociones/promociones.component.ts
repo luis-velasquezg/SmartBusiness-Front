@@ -9,7 +9,7 @@ import { PromocionService } from 'src/app/promocion.service';
 export class PromocionesComponent implements OnInit {
 
   promociones: any;
-  error = false;
+  // error = false;
 
   constructor(
     protected promocionService: PromocionService
@@ -20,12 +20,12 @@ export class PromocionesComponent implements OnInit {
     .subscribe(
       (data) => {
         this.promociones = data;
-        this.error = false;
+        // this.error = false;
       },
       (error) => {
         console.error(error);
-        this.error = true;
-        this.promociones = [];
+        // this.error = true;
+        // this.promociones = [];
       }
     );
   }

@@ -1,29 +1,9 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject, async } from '@angular/core/testing';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 
 import { PromocionService } from './promocion.service';
 import { componentFactoryName } from '@angular/compiler';
 import { throwError } from 'rxjs';
-
-// describe('PromocionService', () => {
-//   let service: PromocionService;
-
-//   beforeEach(() => {
-//     TestBed.configureTestingModule({});
-//     service = TestBed.inject(PromocionService);
-//   });
-
-//   it('should be created', () => {
-//     expect(service).toBeTruthy();
-//   });
-
-  // describe('When getPromociones() is called', () => {
-  //   it('should handle error', () => {
-  //     spyOn(Component.PromocionService, 'getPromociones').and.returnValue(throwError({ error: 'error' }));
-  //     component.getPromociones();
-  //     expect(component.error).toBeTruthy();
-  //   });
-  // });
 
 
 describe('PromocionService', () => {
@@ -54,6 +34,20 @@ describe('PromocionService', () => {
       providers: [PromocionService]
     });
   });
+
+
+  it('should be created', inject([PromocionService], (service: PromocionService) => {
+    expect(service).toBeTruthy();
+  }));
+
+  it ('should get Promociones', async(() => {
+    const service: PromocionService = TestBed.get(PromocionService);
+    service.getPromociones().subscribe(
+      (response) => expect(response.json()).not.toBeNull(),
+      (error) => fail(error)
+    );
+  }));
+
 
   describe('get data', () => {
     it('should get results',

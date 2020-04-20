@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PromocionesComponent } from './promociones.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 
 describe('PromocionesComponent', () => {
   let component: PromocionesComponent;
@@ -8,6 +10,7 @@ describe('PromocionesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       declarations: [ PromocionesComponent ]
     })
     .compileComponents();
@@ -19,9 +22,16 @@ describe('PromocionesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('should render title in a h3 tag', async(() => {
+    fixture = TestBed.createComponent(PromocionesComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain('Promociones');
+  }));
+
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
 
 
 // describe('When getPromociones() is called', () => {
