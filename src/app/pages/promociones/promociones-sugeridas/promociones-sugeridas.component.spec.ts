@@ -1,32 +1,32 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PromocionesComponent } from './promociones.component';
+import { PromocionesSugeridasComponent } from './promociones-sugeridas.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 
-describe('PromocionesComponent', () => {
-  let component: PromocionesComponent;
-  let fixture: ComponentFixture<PromocionesComponent>;
+describe('PromocionesSugeridasComponent', () => {
+  let component: PromocionesSugeridasComponent;
+  let fixture: ComponentFixture<PromocionesSugeridasComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [ PromocionesComponent ]
+      declarations: [ PromocionesSugeridasComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PromocionesComponent);
+    fixture = TestBed.createComponent(PromocionesSugeridasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
   it('should render title in a h3 tag', async(() => {
-    fixture = TestBed.createComponent(PromocionesComponent);
+    fixture = TestBed.createComponent(PromocionesSugeridasComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h3').textContent).toContain('Promociones');
+    expect(compiled.querySelector('h3').textContent).toContain('PromocionesSugeridas');
   }));
 
   // it('should create', () => {
@@ -34,9 +34,9 @@ describe('PromocionesComponent', () => {
   // });
 
 
-// describe('When getPromociones() is called', () => {
+// describe('When getPromocionesSugeridas() is called', () => {
 //     it('should handle error', () => {
-//       spyOn(Component.PromocionService, 'getPromociones').and.returnValue(throwError({ error: 'error' }));
+//       spyOn(Component.PromocionService, 'getPromocionesSugeridas').and.returnValue(throwError({ error: 'error' }));
 //       component.ngOnInit();
 //       expect(component.error).toBeTruthy();
 //     });

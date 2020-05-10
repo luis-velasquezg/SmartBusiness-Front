@@ -11,23 +11,28 @@ export class PromocionesComponent implements OnInit {
   promociones: any;
   // error = false;
 
-  constructor(
-    protected promocionService: PromocionService
-  ) { }
+  
+  constructor() {}
 
-  ngOnInit(){
-    this.promocionService.getPromociones()
-    .subscribe(
-      (data) => {
-        this.promociones = data;
-        // this.error = false;
-      },
-      (error) => {
-        console.error(error);
-        // this.error = true;
-        // this.promociones = [];
-      }
-    );
-  }
+  ngOnInit(): void {}
+
+// constructor(
+  //   protected promocionService: PromocionService
+  // ) { }
+
+  // ngOnInit(){
+  //   this.promocionService.getPromociones()
+  //   .subscribe(
+  //     (data) => {
+  //       this.promociones = data;
+  //       // this.error = false;
+  //     },
+  //     (error) => {
+  //       console.error(error);
+  //       // this.error = true;
+  //       // this.promociones = [];
+  //     }
+  //   );
+  // }
 
 }

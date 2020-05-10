@@ -1,0 +1,39 @@
+<div style="text-align:center">
+    <h3 id="titulo-promociones-aplicadas">
+        Promociones Aplicadas
+    </h3>
+</div>
+
+<!-- <span *ngFor='let promocion of promociones'> -->
+<table>
+    
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Fecha Inicio</th>
+                <th>Nombre Producto</th>
+                <th>Codigo Producto</th>
+                <th>Porcentaje de Promocion</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor='let promocion of promociones'>
+                <td>{{ promocion.codigo }}</td>
+                <td>{{ promocion.fecha }}</td>
+                <td>{{ promocion.producto.nombre }}</td>
+                <td>{{ promocion.producto.codigo }}</td>
+                <td>{{ promocion.porcentajePromocion }}</td>
+            </tr>
+        </tbody>
+   
+        
+   
+</table>
+<!--  -->
+
+
+<!-- {{ promocion.codigo }}
+{{ promocion.mensaje }}
+{{ promocion.fecha }}
+{{ promocion.producto.nombre }} -->

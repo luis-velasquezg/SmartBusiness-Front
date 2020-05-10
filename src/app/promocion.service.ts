@@ -8,13 +8,18 @@ import { Observable } from 'rxjs';
 })
 export class PromocionService {
 
-  // private urlAPI = 'http://localhost:8080/promociones/verpromociones';
-  private urlAPI = 'http://192.168.137.1:8080/promociones/verpromociones/';
+  // private urlAPI = 'http://localhost:8080/smartbusiness/api/v1/promociones/';
+  private urlAPI = 'http://192.168.137.1:8080/smartbusiness/api/v1/promociones';
 
   constructor(protected http: HttpClient) { }
 
-  getPromociones(): Observable<any> {
+  getPromocionesSugeridas(): Observable<any> {
     return this.http.get(this.urlAPI);
   }
+
+  getPromocionesAplicadas(): Observable<any> {
+    return this.http.get(this.urlAPI + '/guardadas/');
+  }
+
 
 }

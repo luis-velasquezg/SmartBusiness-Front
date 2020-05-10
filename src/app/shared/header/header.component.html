@@ -21,9 +21,25 @@
             <a routerLink="home" class="rk-menu__link">Home</a>
           </li>
 
+          <!-- <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="promociones" class="rk-menu__link">Promociones</a>
+          </li> -->
+
+
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="promociones" class="rk-menu__link">Ver Promociones</a>
+            <a routerLink="promociones" class="rk-menu__link">Promociones</a>
+            <nav class="rk-menu__sub">
+              <ul class="rk-container">
+                <li class="rk-menu__item">
+                  <a routerLink="promociones-sugeridas" class="rk-menu__link">Sugeridas</a>
+                </li>
+                <li class="rk-menu__item">
+                  <a routerLink="promociones-aplicadas" class="rk-menu__link">Aplicadas</a>
+                </li>
+              </ul>
+            </nav>
           </li>
+
           
           <li routerLinkActive="active" class="rk-menu__item">
             <a routerLink="about" class="rk-menu__link">About</a>
