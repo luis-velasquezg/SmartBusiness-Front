@@ -10,6 +10,7 @@ import { Promocion } from '../../../classes/promocion';
 })
 export class PromocionesSugeridasComponent implements OnInit {
 
+  title = 'Promociones Sugeridas';
   // promociones: any;
   promociones: Promocion[];
   // promocion: Promocion;

@@ -8,6 +8,7 @@ import { PromocionService } from 'src/app/promocion.service';
 })
 export class PromocionesComponent implements OnInit {
 
+  title = 'Promociones';
   promociones: any;
   // error = false;
 
@@ -15,24 +16,5 @@ export class PromocionesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-// constructor(
-  //   protected promocionService: PromocionService
-  // ) { }
-
-  // ngOnInit(){
-  //   this.promocionService.getPromociones()
-  //   .subscribe(
-  //     (data) => {
-  //       this.promociones = data;
-  //       // this.error = false;
-  //     },
-  //     (error) => {
-  //       console.error(error);
-  //       // this.error = true;
-  //       // this.promociones = [];
-  //     }
-  //   );
-  // }
 
 }
