@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PromocionService } from 'src/app/promocion.service';
+import { Promocion } from '../../../classes/promocion';
 
 @Component({
   selector: 'app-promociones-aplicadas',
@@ -8,7 +9,8 @@ import { PromocionService } from 'src/app/promocion.service';
 })
 export class PromocionesAplicadasComponent implements OnInit {
 
-  promociones: any;
+  // promociones: any;
+  promociones: Promocion[];
 
   constructor(protected promocionService: PromocionService) { }
 
@@ -19,7 +21,7 @@ export class PromocionesAplicadasComponent implements OnInit {
         this.promociones = data;
         console.log(this.promociones);
       }
-    )
+    );
   }
 
 }

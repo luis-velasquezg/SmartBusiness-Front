@@ -9,11 +9,11 @@
     
         <thead>
             <tr>
-                <th>Codigo</th>
-                <th>Fecha Inicio</th>
+                <th>Código</th>
+                <th>Fecha de Aplicación</th>
                 <th>Nombre Producto</th>
-                <th>Codigo Producto</th>
-                <th>Porcentaje de Promocion</th>
+                <th>Código Producto</th>
+                <th>Porcentaje Promoción</th>
             </tr>
         </thead>
     
@@ -23,7 +23,7 @@
                 <td>{{ promocion.fecha }}</td>
                 <td>{{ promocion.producto.nombre }}</td>
                 <td>{{ promocion.producto.codigo }}</td>
-                <td>{{ promocion.porcentajePromocion }}</td>
+                <td>{{ promocion.porcentajePromocion * 100 }}%</td>
             </tr>
         </tbody>
    
