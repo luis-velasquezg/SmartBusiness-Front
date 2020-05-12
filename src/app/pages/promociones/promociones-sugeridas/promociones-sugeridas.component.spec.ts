@@ -26,7 +26,7 @@ describe('PromocionesSugeridasComponent', () => {
     fixture = TestBed.createComponent(PromocionesSugeridasComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h3').textContent).toContain('PromocionesSugeridas');
+    expect(compiled.querySelector('h3').textContent).toContain('Promociones Sugeridas');
   }));
 
   // it('should create', () => {
