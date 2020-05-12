@@ -10,7 +10,7 @@ import { PromocionesSugeridasComponent } from './pages/promociones/promociones-s
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'promociones', component: PromocionesComponent },
+  { path: 'promociones', component: PromocionesComponent,},
   { path: 'promociones-aplicadas', component: PromocionesAplicadasComponent},
   {path: 'promociones-sugeridas', component: PromocionesSugeridasComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }

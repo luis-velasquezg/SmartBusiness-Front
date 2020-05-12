@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PromocionService } from 'src/app/promocion.service';
-// import { Promocion } from 'src/app/classes/promocion';
 import { Promocion } from '../../../classes/promocion';
+
 
 @Component({
   selector: 'app-promociones-sugeridas',
@@ -14,7 +14,7 @@ export class PromocionesSugeridasComponent implements OnInit {
   // promociones: any;
   promociones: Promocion[];
   // promocion: Promocion;
-  mensaje: string;
+  mensaje: any;
   // error = false;
 
   constructor(
@@ -48,9 +48,12 @@ export class PromocionesSugeridasComponent implements OnInit {
 
   guardarPromocion(promocionNueva: Promocion): void {
     console.log(promocionNueva);
-    this.promocionService.postPromocion(promocionNueva);
+    this.mensaje = this.promocionService.postPromocion(promocionNueva);
+
   }
 
+
+  
 
   /* ******
   // updateRegistro(registroActividadDTO: RegistroActividadDTO): Observable<any> {
