@@ -4,36 +4,26 @@
     </h3>
 </div>
 
-<!-- <span *ngFor='let promocion of promociones'> -->
 <table>
-    
-        <thead>
-            <tr>
-                <th>Código</th>
-                <th>Fecha de Aplicación</th>
-                <th>Nombre Producto</th>
-                <th>Código Producto</th>
-                <th>Porcentaje Promoción</th>
-            </tr>
-        </thead>
-    
-        <tbody>
-            <tr *ngFor='let promocion of promociones'>
-                <td>{{ promocion.codigo }}</td>
-                <td>{{ promocion.fecha }}</td>
-                <td>{{ promocion.producto.nombre }}</td>
-                <td>{{ promocion.producto.codigo }}</td>
-                <td>{{ promocion.porcentajePromocion * 100 }}%</td>
-            </tr>
-        </tbody>
-   
-        
-   
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Fecha de Aplicación</th>
+            <th>Nombre Producto</th>
+            <th>Código Producto</th>
+            <th>Porcentaje Promoción</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor='let promocion of promociones'>
+            <td>{{ promocion.codigo }}</td>
+            <td>{{ promocion.fecha }}</td>
+            <td>{{ promocion.producto.nombre }}</td>
+            <td>{{ promocion.producto.codigo }}</td>
+            <td>{{ promocion.porcentajePromocion * 100 }}%</td>
+        </tr>
+    </tbody>
 </table>
-<!--  -->
 
-
-<!-- {{ promocion.codigo }}
-{{ promocion.mensaje }}
-{{ promocion.fecha }}
-{{ promocion.producto.nombre }} -->
+<p>{{ mensaje }}</p>
